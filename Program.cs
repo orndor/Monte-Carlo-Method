@@ -47,11 +47,11 @@ namespace Monte_Carlo_Method
                 }
             }
             //Step 5:
-            double value = (double)counter / (double)iterations * 4.0;
+            double value = 4.0 * counter / iterations ;
 
             //Step 6:
-            Console.WriteLine($"Step 5 Value: {value}");
-            Console.WriteLine($"OutPut: {Math.Abs(Math.Abs(value) - Math.PI)}");
+            Console.WriteLine($"Estimated Pi: {value}");
+            Console.WriteLine($"Delta: {Math.Abs(value - Math.PI)}");
         }
         static Tuple<double, double> UniformlyDistrubited()
         {
